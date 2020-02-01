@@ -1,10 +1,6 @@
-import Vue from 'vue';
-import Vuex from 'vuex';
 import { getCurrentWeather, getForecastWeather } from '../../../core/data/weather.data';
 
-Vue.use(Vuex);
-
-const store = new Vuex.Store({
+const store = {
     state: {
         current: null,
         forecast: [],
@@ -42,6 +38,6 @@ const store = new Vuex.Store({
             }
         }
     }
-})
+}
 
 export default store;

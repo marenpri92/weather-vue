@@ -3,14 +3,12 @@
 </template>
 
 <script>
-import store from "../../store/weather.store";
 import { mapState, mapActions } from "vuex";
 
 export default {
   name: "WeatherForecast",
-  store,
   computed: mapState({
-    forecast: state => state.forecast
+    forecast: state => state.weather.forecast
   }),
   methods: {
     ...mapActions(["getForecast"])

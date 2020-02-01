@@ -1,2 +1,2 @@
-export { default as Error } from './components/error/Error';
-export { default as Loading } from './components/loading/Loading';
+export { default as Error } from './components/Error/Error';
+export { default as Loading } from './components/Loading/Loading';

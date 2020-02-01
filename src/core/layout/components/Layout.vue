@@ -1,8 +1,8 @@
 <template>
-  <div id="layout" class="content">
+  <div id="layout">
     <v-container flex>
       <v-row align="center" justify="center">
-        <v-col cols="12" xs="2">
+        <v-col xs="11" sm="10" lg="5">
           <v-card rised shaped>
             <router-view></router-view>
           </v-card>
@@ -19,7 +19,7 @@ export default {
 </script>
 
 <style>
-.content {
+#layout {
   background-color: #0d47a1;
 }
 </style>

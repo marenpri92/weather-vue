@@ -1,5 +1,5 @@
 // import { urlBase, apiKey } from '../environment/env';
-import {  Current, Forecast } from './mocks';
+import { Current, Forecast } from './mocks';
 
 export const getCurrentWeather = async (query) => {
     try {
