@@ -1,5 +1,7 @@
 <template>
+<span>
   <img :src="url" />
+</span>
 </template>
 
 <script>
@@ -7,10 +9,11 @@ import { urlIcon } from "../../../../core/environment/env";
 
 export default {
   name: "IconWeather",
-  props: ["icon"],
+  props: ["icon", "small"],
   computed: {
     url() {
-      return `${urlIcon}/${this.icon}@2x.png`;
+      let icon = this.small ? this.icon : `${this.icon}@2x`
+      return `${urlIcon}/${icon}.png`;
     }
   }
 };
