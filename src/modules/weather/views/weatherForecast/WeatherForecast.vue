@@ -37,10 +37,6 @@ export default {
     Error,
     Skeleton
   },
-  data: () => ({
-    labels: [],
-    value: []
-  }),
   computed: mapState({
     forecast: state => state.weather.forecast,
     loading: state => state.weather.loading,
