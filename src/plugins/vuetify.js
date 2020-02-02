@@ -14,7 +14,7 @@ const opts = {
                 primary: "#3F51B5",
                 secondary: "#FFFF00",
                 accent: "#CFD8DC",
-                error: "F44336",
+                error: "#F44336",
             },
         },
     },

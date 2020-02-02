@@ -15,7 +15,7 @@
 
 <script>
 import ForecastGrafic from "../ForecastGrafic/ForecastGrafic";
-import formatDate from "../../../../helpers/formatDate";
+import { formatDate } from "../../../../helpers";
 import IconWeather from "../IconWeather/IconWeather";
 import ForecastDayDetails from "../ForecastDayDetails/ForecastDayDetails";
 

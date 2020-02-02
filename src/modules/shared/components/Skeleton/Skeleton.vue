@@ -3,12 +3,15 @@
     :loading="loading"
     transition="scale-transition"
     height="94"
-    type="list-item-two-line"
-  ></v-skeleton-loader>
+    :type="type"
+  >
+    <slot></slot>
+  </v-skeleton-loader>
 </template>
 
 <script>
 export default {
-  name: "Skeleton"
+  name: "Skeleton",
+  props: ["loading", "type"]
 };
 </script>

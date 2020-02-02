@@ -3,7 +3,7 @@
     <v-container flex>
       <v-row align="center" justify="center">
         <v-col xs="11" sm="10" lg="5" >
-          <v-card>
+          <v-card class="elevation-22">
             <router-view></router-view>
           </v-card>
         </v-col>
@@ -22,5 +22,4 @@ export default {
 #layout {
   background-color: #3e414236;
 }
-
 </style>

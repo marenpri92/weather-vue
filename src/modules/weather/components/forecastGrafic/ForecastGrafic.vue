@@ -1,10 +1,5 @@
 <template>
-  <v-sheet
-    class="v-sheet--offset mx-auto mt-2"
-    color="cyan"
-    elevation="12"
-    width="100%"
-  >
+  <v-sheet class="v-sheet--offset mx-auto mt-2" color="cyan" elevation="12" width="100%">
     <v-sparkline
       :labels="points.labels"
       :value="points.values"
@@ -17,7 +12,7 @@
 </template>
 
 <script>
-import formatHours from "../../../../helpers/formatHours";
+import { formatHours } from "../../../../helpers";
 
 export default {
   name: "ForecastGrafic",
@@ -34,8 +29,8 @@ export default {
         values: []
       };
       list.forEach(elem => {
-        points.labels.push(formatHours(elem.dt)), 
-        points.values.push(elem.main.temp);
+        points.labels.push(formatHours(elem.dt)),
+          points.values.push(elem.main.temp);
       });
       return points;
     }

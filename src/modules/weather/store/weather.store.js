@@ -19,7 +19,11 @@ const store = {
             commit('setLoading', true);
             try {
                 const current = await getCurrentWeather(query);
-                commit('fillCurrent', current);
+                if (current.cod == 200) {
+                    commit('fillCurrent', current);
+                } else {
+                    commit('fillError', current.message);
+                }
                 commit('setLoading', false);
             } catch (error) {
                 commit('setLoading', false);
@@ -30,7 +34,11 @@ const store = {
             commit('setLoading', true);
             try {
                 const forecast = await getForecastWeather(query);
-                commit('fillForecast', forecast);
+                if (forecast.cod == 200) {
+                    commit('fillForecast', forecast);
+                } else {
+                    commit('fillError', forecast.message);
+                }
                 commit('setLoading', false);
             } catch (error) {
                 commit('setLoading', false);

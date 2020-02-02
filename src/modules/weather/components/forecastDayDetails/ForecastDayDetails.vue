@@ -1,10 +1,13 @@
 <template>
-  <v-row class="mt-10 mr-2 mb-5 ml-2" align="center" justify="space-around" >
+  <v-row class="mt-10 mr-2 mb-5 ml-2" align="center" justify="space-around">
     <v-col>
       <div v-if="current">
         <v-row justify="space-around" align="start">
           <v-icon color="accent">mdi-weather-windy</v-icon>
-          <p>{{current.wind}} <span class="font-italic font-weight-high	">km/h</span></p>
+          <p>
+            {{current.wind}}
+            <span class="font-italic font-weight-high">km/h</span>
+          </p>
         </v-row>
         <v-row justify="space-around" align="start">
           <v-icon color="accent">mdi-water-percent</v-icon>
@@ -28,7 +31,7 @@
 
 <script>
 export default {
-    name: "ForecastDayDetails",
-    props: ["current"]
-}
+  name: "ForecastDayDetails",
+  props: ["current"]
+};
 </script>
