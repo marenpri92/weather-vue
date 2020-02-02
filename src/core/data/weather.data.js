@@ -3,7 +3,7 @@ import { Current, Forecast } from './mocks';
 
 export const getCurrentWeather = async (query) => {
     try {
-        // const resp = await fetch(`${urlBase}/weather?${query}&APPID=${apiKey}`);
+        // const resp = await fetch(`${urlBase}/weather?${query}&APPID=${apiKey}&units=metric`);
         // const json = resp.json();
         // return json;
 
@@ -17,7 +17,7 @@ export const getCurrentWeather = async (query) => {
 
 export const getForecastWeather = async (query) => {
     try {
-        // const resp = await fetch(`${urlBase}/forecast?${query}&APPID=${apiKey}`);
+        // const resp = await fetch(`${urlBase}/forecast?${query}&APPID=${apiKey}&units=metric`);
         // const json = resp.json();
         // return json;
 

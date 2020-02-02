@@ -1,12 +1,23 @@
 <template>
-  <p>{{forecast}}</p>
+  <v-container class="card-content">
+    <p class="title">This week</p>
+    <ForecastList :list="forecast.list" />
+  </v-container>
 </template>
 
 <script>
 import { mapState, mapActions } from "vuex";
+import ForecastList from "../../components/ForecastList/ForecastList";
 
 export default {
   name: "WeatherForecast",
+  components: {
+    ForecastList
+  },
+  data: () => ({
+    labels: [],
+    value: []
+  }),
   computed: mapState({
     forecast: state => state.weather.forecast
   }),

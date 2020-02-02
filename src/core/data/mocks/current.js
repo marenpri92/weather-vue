@@ -5,37 +5,36 @@ export default {
     },
     "weather": [
         {
-            "id": 802,
+            "id": 801,
             "main": "Clouds",
-            "description": "scattered clouds",
-            "icon": "03d"
+            "description": "few clouds",
+            "icon": "02n"
         }
     ],
     "base": "stations",
     "main": {
-        "temp": 283.91,
-        "feels_like": 276.21,
-        "temp_min": 282.59,
-        "temp_max": 284.82,
-        "pressure": 1004,
-        "humidity": 66
+        "temp": 9.29,
+        "feels_like": 2.13,
+        "temp_min": 7.78,
+        "temp_max": 10.56,
+        "pressure": 1001,
+        "humidity": 76
     },
     "visibility": 10000,
     "wind": {
-        "speed": 9.3,
-        "deg": 270,
-        "gust": 14.9
+        "speed": 8.7,
+        "deg": 260
     },
     "clouds": {
-        "all": 40
+        "all": 20
     },
-    "dt": 1580470334,
+    "dt": 1580591421,
     "sys": {
         "type": 1,
         "id": 1275,
         "country": "DE",
-        "sunrise": 1580453443,
-        "sunset": 1580485703
+        "sunrise": 1580539749,
+        "sunset": 1580572216
     },
     "timezone": 3600,
     "id": 2950159,
