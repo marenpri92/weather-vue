@@ -3,11 +3,19 @@
     <v-row justify="space-around" align="start">
       <p class="title">Next five days</p>
       <v-btn to="current" text small color="secondary" class="font-weight-black">
-        <v-icon small>mdi-arrow-left-thick</v-icon>
-        Back
+        <v-icon small>mdi-arrow-left-thick</v-icon>Back
       </v-btn>
     </v-row>
-    <ForecastList :list="forecast.list" />
+    <v-skeleton-loader
+      v-for="(item,i) in 5"
+      :key="i"
+      :loading="loading"
+      transition="scale-transition"
+      height="94"
+      type="list-item-avatar-three-line"
+    >
+      <ForecastList :list="forecast.list" />
+    </v-skeleton-loader>
   </v-container>
 </template>
 
@@ -25,7 +33,8 @@ export default {
     value: []
   }),
   computed: mapState({
-    forecast: state => state.weather.forecast
+    forecast: state => state.weather.forecast,
+    loading: state => state.weather.loading
   }),
   methods: {
     ...mapActions(["getForecast"])
