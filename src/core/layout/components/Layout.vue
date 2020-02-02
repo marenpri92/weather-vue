@@ -2,7 +2,7 @@
   <div id="layout">
     <v-container flex>
       <v-row align="center" justify="center">
-        <v-col xs="11" sm="10" lg="5" >
+        <v-col xs="11" sm="10" lg="5">
           <v-card class="elevation-22">
             <router-view></router-view>
           </v-card>

@@ -1,10 +1,5 @@
 <template>
-  <v-skeleton-loader
-    :loading="loading"
-    transition="scale-transition"
-    height="94"
-    :type="type"
-  >
+  <v-skeleton-loader :loading="loading" transition="scale-transition" height="94" :type="type">
     <slot></slot>
   </v-skeleton-loader>
 </template>

@@ -5,7 +5,7 @@ import { WeatherCurrent, WeatherForecast } from '../modules/weather';
 Vue.use(VueRouter)
 
 const routes = [
-    { path: '/', redirect: 'current'},
+    { path: '/', redirect: 'current' },
     { path: '/current', component: WeatherCurrent },
     { path: '/forecast', component: WeatherForecast }
 ];

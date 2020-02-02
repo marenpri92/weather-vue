@@ -1,7 +1,7 @@
 <template>
-<span>
-  <img :src="url" />
-</span>
+  <span>
+    <img :src="url" />
+  </span>
 </template>
 
 <script>
@@ -12,7 +12,7 @@ export default {
   props: ["icon", "small"],
   computed: {
     url() {
-      let icon = this.small ? this.icon : `${this.icon}@2x`
+      let icon = this.small ? this.icon : `${this.icon}@2x`;
       return `${urlIcon}/${icon}.png`;
     }
   }
