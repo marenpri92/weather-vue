@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import { urlIcon } from "../../../../core/environment/env";
+import { urlIcon } from "../../../../core/environment/.env";
 
 export default {
   name: "IconWeather",

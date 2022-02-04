@@ -2,7 +2,7 @@ import { shallowMount, createLocalVue } from "@vue/test-utils";
 import Vuex from 'vuex';
 
 import WeatherForecast from './WeatherForecast.vue';
-import ForecastList from "../../components/ForecastList/ForecastList.vue";
+import ForecastList from "../../components/forecastList/ForecastList.vue";
 import { geolocalization } from "../../../../helpers";
 
 

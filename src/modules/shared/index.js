@@ -1,2 +1,2 @@
-export { default as Error } from './components/Error/Error';
-export { default as Skeleton } from './components/Skeleton/Skeleton';
+export { default as Error } from './components/error/Error';
+export { default as Skeleton } from './components/skeleton/Skeleton';

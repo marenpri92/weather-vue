@@ -1,4 +1,4 @@
-import { urlBase, apiKey } from '../environment/env';
+import { urlBase, apiKey } from '../environment/.env';
 
 export const getCurrentWeather = async (query) => {
     try {

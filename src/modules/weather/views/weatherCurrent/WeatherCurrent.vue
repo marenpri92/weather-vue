@@ -43,7 +43,7 @@
 import { mapState, mapActions } from "vuex";
 
 import IconWeather from "../../components/IconWeather/IconWeather";
-import ForecastDayDetails from "../../components/ForecastDayDetails/ForecastDayDetails";
+import ForecastDayDetails from "../../components/forecastDayDetails/ForecastDayDetails";
 import { mapDetails, formatDate, geolocalization } from "../../../../helpers";
 import { Error, Skeleton } from "../../../shared";
 

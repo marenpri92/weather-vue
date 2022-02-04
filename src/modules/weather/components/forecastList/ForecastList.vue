@@ -14,10 +14,10 @@
 </template>
 
 <script>
-import ForecastGrafic from "../ForecastGrafic/ForecastGrafic";
+import ForecastGrafic from "../forecastGrafic/ForecastGrafic";
 import { formatDate } from "../../../../helpers";
 import IconWeather from "../IconWeather/IconWeather";
-import ForecastDayDetails from "../ForecastDayDetails/ForecastDayDetails";
+import ForecastDayDetails from "../forecastDayDetails/ForecastDayDetails";
 
 export default {
   name: "ForecastList",

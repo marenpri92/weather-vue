@@ -26,7 +26,7 @@
 <script>
 import { mapState, mapActions } from "vuex";
 
-import ForecastList from "../../components/ForecastList/ForecastList";
+import ForecastList from "../../components/forecastList/ForecastList";
 import { geolocalization } from "../../../../helpers";
 import { Error, Skeleton } from "../../../shared";
 
